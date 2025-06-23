@@ -1,0 +1,74 @@
+/* Body scroll lock */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Scrollable page container */
+.page-container {
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2 {
+  color: #2c3e50;
+  margin-top: 25px;
+}
+
+/* Paragraph */
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Ordered list */
+ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+/* Admissions table */
+.admissions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.admissions-table th,
+.admissions-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.admissions-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.admissions-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

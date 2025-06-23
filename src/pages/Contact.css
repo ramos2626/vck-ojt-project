@@ -1,0 +1,42 @@
+/* Body: lock scroll */
+body {
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Scrollable container */
+.page-container {
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Headings */
+/* h1, h2 {
+  color: #2c3e50;
+  margin-top: 25px;
+  margin-bottom: 10px;
+} */
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
