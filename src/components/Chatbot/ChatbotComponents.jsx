@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { getEmbeddings, cosineSimilarity } from "../../utils/aiService"; // Path adjusted
 import { SIMILARITY_THRESHOLD } from "../../utils/constants"; // Path adjusted
 import "./Chatbot1.css";
-import Image1 from '../../assets/operator.png'
+// import Image1 from ''
 import useOnlineStatus from "../../hooks/useOnlineStatus";
 import KNOWLEDGE_BASE_DATA from "../../data/knowledgeBase.json";
 const ChatbotComponent = () => {
@@ -138,7 +138,7 @@ const ChatbotComponent = () => {
       {!isChatOpen && (
         <button className="chatbot-open-button" onClick={toggleChat}>
           <img
-            src={Image1}
+            src="/operator.png"
             alt="Chat Icon"
             style={{ width: "100px", height: "auto" ,borderRadius:'50%' }}
           />
