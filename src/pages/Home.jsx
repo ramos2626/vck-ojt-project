@@ -6,7 +6,7 @@ import './Home.css'; // Make sure to include this CSS file
 const Home = () => {
   return (
     <div className="content">
-      <div style={{ marginTop: "40px", maxHeight: '78vh' }} className="page-container ">
+      <div style={{ marginTop: "40px", maxHeight: '72vh' }} className="page-container ">
         <div className="hero-section">
           <div className="hero-image-container">
             <img alt="vivekanand college campus" className="hero-banner-image" src="src/assets/vck.jpg"></img>

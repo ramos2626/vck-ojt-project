@@ -6,7 +6,10 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
 } */
-
+.content{
+  background-color: #52d2d2;
+  padding: 40px;
+}
 /* Scrollable container */
 .page-container {
   max-height: 100vh;

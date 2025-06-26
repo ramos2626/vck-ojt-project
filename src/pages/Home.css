@@ -1,3 +1,7 @@
+.content{
+  background-color: #52d2d2;
+  padding: 40px;
+}
 .page-container {
   background-color: #ffff;
   max-width: 1000px;
