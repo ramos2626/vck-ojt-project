@@ -10,8 +10,11 @@ import Navbar from './components/Header/Navbar1';
 import Footer1 from './components/Footer/Footer1';
 import AdmissionsPage from './pages/Admissions';
 
+import ChatbotComponent from './components/Chatbot/ChatbotComponents';
+
 function App() {
   return (
+    <>
     <Router>
       <Navbar />
       <Routes>
@@ -21,8 +24,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/admissions" element={<AdmissionsPage />} />
       </Routes>
-      <Footer1/>
+      <ChatbotComponent/>
     </Router>
+    <Footer1/>
+    </>
   );
 }
 

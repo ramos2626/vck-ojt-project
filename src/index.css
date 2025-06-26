@@ -69,5 +69,31 @@ button:focus-visible {
 body{
   background-color: #52d2d2;
   overflow: hidden;
-  height: 100vh;
+  
+}
+.content{
+  padding: 25px;
+}
+/* For all scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #43e97b, #38f9d7);
 }

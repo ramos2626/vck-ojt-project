@@ -1,4 +1,4 @@
-/* Body scroll lock */
+/* Body scroll lock
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   color: #333;
-}
+} */
 
 /* Scrollable page container */
 .page-container {
@@ -48,9 +48,9 @@ ol li {
 
 .admissions-table th,
 .admissions-table td {
-  border: 1px solid #ccc;
-  padding: 12px;
-  text-align: left;
+  border: 1px solid #1b0c0c !important;
+  padding: 12px !important;
+  text-align: left !important;
 }
 
 .admissions-table th {

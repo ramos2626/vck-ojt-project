@@ -1,33 +1,31 @@
-/* Body: lock scroll */
+/* Body: lock scroll
 body {
-  margin-top: 0;
+  margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; Prevent scroll on body
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
   color: #333;
-}
+} */
 
-/* Scrollable container */
+/* Scrollable content container */
 .page-container {
   max-height: 100vh;
   overflow-y: auto;
   padding: 30px;
   box-sizing: border-box;
   background-color: #fff;
+  margin: 0 auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
-/* Headings */
-/* h1, h2 {
-  color: #2c3e50;
-  margin-top: 25px;
-  margin-bottom: 10px;
-} */
 
 /* Paragraphs */
 p {
   margin-bottom: 15px;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 /* Links */
@@ -39,4 +37,25 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* ========== Responsive Enhancements ========== */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 20px;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: 15px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }

@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../pages/Admissions.jsx';
+const cellStyle = {
+  border: '3px solid #bbb',
+  padding: '12px',
+  textAlign: 'left'
+};
+
 
 const AdmissionsPage = () => {
   return (
     <div className="content">
-      <div style={{marginTop:'50px',maxHeight:'76vh'}} className="page-container">
+      <div style={{marginTop:"40px",maxHeight:'80vh'}} className="page-container">
         <h1>Admissions at Vivekanand College</h1>
         <p>
           Welcome to the Admissions page of Vivekanand College! We are delighted you're considering
@@ -18,33 +24,33 @@ const AdmissionsPage = () => {
         </p>
 
         <h2>Eligibility Criteria for Undergraduate Programs</h2>
-        <table className="admissions-table">
+        <table style={cellStyle} className="admissions-table">
           <thead>
             <tr>
-              <th>Program</th>
-              <th>Minimum Qualification</th>
-              <th>Required Subjects</th>
-              <th>Minimum Marks (%)</th>
+              <th style={cellStyle}>Program</th>
+              <th style={cellStyle}>Minimum Qualification</th>
+              <th style={cellStyle}>Required Subjects</th>
+              <th style={cellStyle}>Minimum Marks (%)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>B.Sc. Computer Science</td>
-              <td>10+2 (or equivalent)</td>
-              <td>Physics, Chemistry, Maths</td>
-              <td>50%</td>
+              <td style={cellStyle}>B.Sc. Computer Science</td>
+              <td style={cellStyle}>10+2 (or equivalent)</td>
+              <td style={cellStyle}>Physics, Chemistry, Maths</td>
+              <td style={cellStyle}>50%</td>
             </tr>
             <tr>
-              <td>B.Com. Accounting &amp; Finance</td>
-              <td>10+2 (or equivalent)</td>
-              <td>Commerce Stream</td>
-              <td>45%</td>
+              <td style={cellStyle}>B.Com. Accounting &amp; Finance</td>
+              <td style={cellStyle}>10+2 (or equivalent)</td>
+              <td style={cellStyle}>Commerce Stream</td>
+              <td style={cellStyle}>45%</td>
             </tr>
             <tr>
-              <td>B.A. English Literature</td>
-              <td>10+2 (or equivalent)</td>
-              <td>Any Stream</td>
-              <td>40%</td>
+              <td style={cellStyle}>B.A. English Literature</td>
+              <td style={cellStyle}>10+2 (or equivalent)</td>
+              <td style={cellStyle}>Any Stream</td>
+              <td style={cellStyle}>40%</td>
             </tr>
           </tbody>
         </table>

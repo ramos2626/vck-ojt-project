@@ -1,115 +1,161 @@
-.content {
-  font-family: 'Segoe UI', sans-serif;
-  padding: 20px;
- background-color: #52d2d2;
-  color: #333;
-  
-}
-
 .page-container {
   background-color: #ffff;
-  border-radius: 10px;
   max-width: 1000px;
-  margin: 0  auto;
+  margin: 0 auto;
+
   overflow-y: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* Make hero section responsive */
 .hero-section {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
+  margin-bottom: 0px;
   border-radius: 8px;
-  margin-bottom: 10px;
+}
+
+.hero-image-container {
+  width: 100%;
+  height: 500px;
+  /* Fixed height for desktop */
 }
 
 .hero-banner-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
+  object-fit:fill;
+  object-position: center center;
+  filter: brightness(60%);
+  transition: transform 0.5s ease;
+}
+
+.hero-section:hover .hero-banner-image {
+  transform: scale(1.02);
+  /* Slight zoom on hover */
 }
 
 .hero-overlay-text {
   position: absolute;
-  width: 100%;
-  height: 50vh;
-  background-image: url('https://vck-ojt.vercel.app/assets/college-banner-Cz0xylpt.png');
-  background-repeat: no-repeat;
-  background-position-x: -450px;
-  background-blend-mode: multiply;
-  background-size: cover;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #fff;
   text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Rest of your existing overlay text styles... */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-image-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image-container {
+    height: 250px;
+  }
+}
+
+
+/* Make text and buttons responsive */
+/* .hero-overlay-text h1 {
+  font-size: 2rem;
+} */
+.hero-overlay-text h1{
+  font-size: 3rem;
+}
+.hero-overlay-text p {
+  font-size: 1rem;
+}
+
+/* Responsive image gallery */
+.image-gallery img {
+  max-width: 100%;
   width: 100%;
-  
+  flex: 1 1 100%;
 }
 
 .hero-btn {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 10px;
+  background-color: green;        /* Solid green background */
+  color: white;                   /* White text */
+  padding: 10px 20px;             /* Spacing */
+  border: none;                   /* No border */
+  border-radius: 8px;             /* Rounded corners */
+  font-weight: bold;              /* Bold text */
+  cursor: pointer;                /* Pointer on hover */
+  transition: background 0.3s;    /* Smooth hover effect */
 }
 
 .hero-btn:hover {
-  background-color: #0056b3;
+  background-color: darkgreen;    /* Darker on hover */
 }
 
-ul {
-  padding-left: 20px;
+/* Responsive layout */
+@media (min-width: 600px) {
+  .image-gallery img {
+    flex: 1 1 48%;
+  }
 }
 
-ul li {
-  margin-bottom: 10px;
+@media (max-width: 768px) {
+  .hero-overlay-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-overlay-text p,
+  .call-to-action p {
+    font-size: 0.95rem;
+  }
+
+  .hero-btn {
+  background-color: green;        /* Solid green background */
+  color: white;                   /* White text */
+  padding: 10px 20px;             /* Spacing */
+  border: none;                   /* No border */
+  border-radius: 8px;             /* Rounded corners */
+  font-weight: bold;              /* Bold text */
+  cursor: pointer;                /* Pointer on hover */
+  transition: background 0.3s;    /* Smooth hover effect */
 }
 
-.image-gallery {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+.hero-btn:hover {
+  background-color: darkgreen;    /* Darker on hover */
 }
 
-.image-gallery img {
-  width: 100%;
-  max-width: 48%;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  .page-container {
+    padding: 10px;
+  }
 }
 
-.call-to-action {
-  text-align: center;
-  margin-top: 40px;
+/* Make text and list items adapt on mobile */
+@media (max-width: 480px) {
+  ul li {
+    font-size: 14px;
+  }
+
+  .hero-overlay-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero-overlay-text p {
+    font-size: 0.9rem;
+  }
+
+  .call-to-action .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 }
 
-.call-to-action .btn {
-  background-color: #28a745;
-  color: white;
-  padding: 12px 30px;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.call-to-action .btn:hover {
-  background-color: #218838;
-}
-/* fghj */
+/* Animation */
 .animate-fade-in-up {
   animation: fadeInUp 1s ease-out both;
 }

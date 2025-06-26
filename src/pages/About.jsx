@@ -1,10 +1,9 @@
 import React from 'react';
-import Chatbot from '../components/Chatbot';
 import './About.css'
 const About = () => {
   return (
    <div className="content">
-      <div style={{marginTop:'50px',maxHeight:'76vh'}} className="page-container ">
+      <div style={{marginTop:"40px",maxHeight:'80vh'}} className="page-container ">
         <h1 style={{fontSize:'50px',color:'#007bff' }} className="animate-fade-in-up text-center ">About Vivekanand College</h1>
 
         <p>
@@ -42,7 +41,7 @@ const About = () => {
           proudly nurtured generations of successful alumni.
         </p>
       </div>
-      <Chatbot/>
+      {/* <Chatbot/> */}
     </div>
   );
 };
