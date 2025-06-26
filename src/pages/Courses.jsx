@@ -22,7 +22,7 @@ const Courses = () => {
             className="course-video"
           >
             <source
-              src="/vck3.mp4"
+              src="/public/vck3.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
