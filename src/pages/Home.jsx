@@ -6,7 +6,7 @@ import './Home.css'; // Make sure to include this CSS file
 const Home = () => {
   return (
     <div className="content">
-      <div style={{ marginTop: "40px", maxHeight: '72vh' }} className="page-container ">
+      <div style={{ marginTop: "40px", maxHeight: '70vh' }} className="page-container ">
         <div className="hero-section">
           <div className="hero-image-container">
             <img alt="vivekanand college campus" className="hero-banner-image" src="/vck.jpg"></img>
@@ -20,7 +20,7 @@ const Home = () => {
 
         <p>
           <b>Vivekanand College</b> is a premier educational institution dedicated to fostering
-          academic excellence, innovation, and holistic development. Established in 1980, we
+          academic excellence, innovation, and holistic    development. Established in 1980, we
           have proudly served generations of students, empowering them to achieve their full
           potential.
         </p>

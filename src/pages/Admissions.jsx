@@ -11,7 +11,7 @@ const cellStyle = {
 const AdmissionsPage = () => {
   return (
     <div className="content">
-      <div style={{marginTop:"40px",maxHeight:'72vh'}} className="page-container">
+      <div style={{marginTop:"40px",maxHeight:'69vh'}} className="page-container">
         <h1>Admissions at Vivekanand College</h1>
         <p>
           Welcome to the Admissions page of Vivekanand College! We are delighted you're considering

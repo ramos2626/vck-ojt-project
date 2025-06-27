@@ -40,7 +40,7 @@ const Navbar1 = () => {
 
         {/* Offcanvas for mobile */}
         <div
-          className="offcanvas offcanvas-end d-md-none text-bg-primary"
+          className="offcanvas offcanvas-end d-md-none w-50 text-bg-primary"
           tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"

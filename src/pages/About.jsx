@@ -3,7 +3,7 @@ import './About.css'
 const About = () => {
   return (
    <div className="content">
-      <div style={{marginTop:"40px",maxHeight:'72vh'}} className="page-container ">
+      <div style={{marginTop:"40px",maxHeight:'69vh'}} className="page-container ">
         <h1 style={{fontSize:'50px',color:'#007bff' }} className="animate-fade-in-up text-center ">About Vivekanand College</h1>
 
         <p>

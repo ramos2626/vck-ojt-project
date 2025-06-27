@@ -4,7 +4,7 @@ import './Contact.css'
 const Contact = () => {
   return (
     <div  className="content">
-      <div style={{marginTop:"40px",maxHeight:'72vh'}}  className="page-container">
+      <div style={{marginTop:"40px",maxHeight:'69vh'}}  className="page-container">
         <h1 className='animate-fade-in-up text-center text-primary'>Contact Us</h1>
         <p>
           We'd love to hear from you! Whether you have questions about admissions, programs, or
