@@ -43,8 +43,8 @@ const Home = () => {
 
         <h2>Campus Life & Facilities</h2>
         <div className="image-gallery">
-          <img alt="Students studying in library" src="https://vck-ojt.vercel.app/assets/students-studying-DbLGuwF_.jpeg" />
-          <img alt="Students on campus ground" src="https://vck-ojt.vercel.app/assets/campus-life-Crkero7B.jpg" />
+          <img alt="Students studying in library" src="/Images/vck-cmp.jpg" />
+          <img alt="Students on campus ground" src="/Images/vck-m.jpeg" />
         </div>
 
         <p>

@@ -66,6 +66,9 @@
   .hero-image-container {
     height: 250px;
   }
+  .hero-section{
+    margin-bottom: -80px;
+  }
 }
 
 
